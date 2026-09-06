@@ -1,0 +1,2692 @@
+{
+  "meta": {
+    "version": "1.0",
+    "tenant_name": "IMPACT",
+    "clock": "2026-08-23T07:42:00+07:00",
+    "today": "2026-08-23",
+    "today_label": "Chủ nhật 23/08/2026",
+    "note": "Proto clock is hôm nay CN 23/08 morning (ops open), not frozen 20/08. One branch: Cầu Giấy."
+  },
+  "tenant": {
+    "id": "ten_impact",
+    "name": "IMPACT",
+    "legal_name": "Công ty TNHH Giáo dục IMPACT",
+    "phone": "024 7300 8899",
+    "zalo_oa_id": "oa_impact"
+  },
+  "branches": [
+    {
+      "id": "br_cg",
+      "tenant_id": "ten_impact",
+      "name": "Cầu Giấy",
+      "code": "CG",
+      "address": "142 Trần Đăng Ninh, Cầu Giấy, Hà Nội",
+      "phone": "024 7300 8899",
+      "active": true,
+      "notes": "Cơ sở vận hành duy nhất trong proto."
+    }
+  ],
+  "rooms": [
+    {
+      "id": "rm_201",
+      "branch_id": "br_cg",
+      "name": "P201",
+      "capacity": 12,
+      "type": "classroom",
+      "active": true,
+      "notes": "Phòng Toán 9 / Lý 10"
+    },
+    {
+      "id": "rm_203",
+      "branch_id": "br_cg",
+      "name": "P203",
+      "capacity": 10,
+      "type": "classroom",
+      "active": true,
+      "notes": "Phòng Anh 9"
+    },
+    {
+      "id": "rm_102",
+      "branch_id": "br_cg",
+      "name": "P102",
+      "capacity": 8,
+      "type": "classroom",
+      "active": true,
+      "notes": "Phòng Toán 8"
+    },
+    {
+      "id": "rm_105",
+      "branch_id": "br_cg",
+      "name": "P105",
+      "capacity": 10,
+      "type": "classroom",
+      "active": true,
+      "notes": "Phòng Anh 6"
+    },
+    {
+      "id": "rm_online",
+      "branch_id": "br_cg",
+      "name": "Online",
+      "capacity": 20,
+      "type": "online",
+      "active": true,
+      "notes": "Không check trùng phòng"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "tch_huy",
+      "name": "Phạm Quốc Huy",
+      "phone": "0904 118 226",
+      "email": "huy@impact.edu.vn",
+      "user_id": "stf_huy",
+      "default_branch_id": "br_cg",
+      "branch_ids": [
+        "br_cg"
+      ],
+      "subjects": [
+        "Toán",
+        "Lý"
+      ],
+      "active": true
+    },
+    {
+      "id": "tch_lan",
+      "name": "Nguyễn Thị Lan",
+      "phone": "0912 447 803",
+      "email": "lan@impact.edu.vn",
+      "user_id": null,
+      "default_branch_id": "br_cg",
+      "branch_ids": [
+        "br_cg"
+      ],
+      "subjects": [
+        "Anh"
+      ],
+      "active": true
+    }
+  ],
+  "staff_profiles": [
+    {
+      "id": "stf_tuan",
+      "full_name": "Trần Minh Tuấn",
+      "phone": "0903 210 888",
+      "email": "tuan@impact.edu.vn",
+      "title": "Founder",
+      "active": true
+    },
+    {
+      "id": "stf_trang",
+      "full_name": "Nguyễn Thu Trang",
+      "phone": "0982 551 019",
+      "email": "trang@impact.edu.vn",
+      "title": "Giáo vụ",
+      "active": true
+    },
+    {
+      "id": "stf_huy",
+      "full_name": "Phạm Quốc Huy",
+      "phone": "0904 118 226",
+      "email": "huy@impact.edu.vn",
+      "title": "Giáo viên",
+      "teacher_id": "tch_huy",
+      "active": true
+    },
+    {
+      "id": "stf_mai",
+      "full_name": "Lê Thu Mai",
+      "phone": "0971 440 228",
+      "email": "mai@impact.edu.vn",
+      "title": "Trợ lý",
+      "active": true
+    }
+  ],
+  "profile_roles": [
+    {
+      "profile_id": "stf_tuan",
+      "role": "founder",
+      "branch_id": "br_cg"
+    },
+    {
+      "profile_id": "stf_trang",
+      "role": "ops",
+      "branch_id": "br_cg"
+    },
+    {
+      "profile_id": "stf_huy",
+      "role": "teacher",
+      "branch_id": "br_cg"
+    },
+    {
+      "profile_id": "stf_mai",
+      "role": "assistant",
+      "branch_id": "br_cg"
+    }
+  ],
+  "students": [
+    {
+      "id": "stu_an",
+      "full_name": "Nguyễn Minh An",
+      "dob": "2011-03-14",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": "Học sinh hạt nhân — vắng T7, học bù đang chờ mẹ xác nhận"
+    },
+    {
+      "id": "stu_ngoc",
+      "full_name": "Trần Bảo Ngọc",
+      "dob": "2011-07-02",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": "Chưa xong liên kết Zalo"
+    },
+    {
+      "id": "stu_nam",
+      "full_name": "Lê Hoàng Nam",
+      "dob": "2011-11-19",
+      "branch_id": "br_cg",
+      "phone": "0987 654 321",
+      "active": true,
+      "notes": "Đi học dù tháng 7 chưa đóng"
+    },
+    {
+      "id": "stu_linh",
+      "full_name": "Phạm Gia Linh",
+      "dob": "2011-01-08",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": ""
+    },
+    {
+      "id": "stu_minh",
+      "full_name": "Hoàng Đức Minh",
+      "dob": "2011-05-22",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": ""
+    },
+    {
+      "id": "stu_ha",
+      "full_name": "Đặng Thu Hà",
+      "dob": "2011-09-30",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": "Khóa Writing 12 buổi"
+    },
+    {
+      "id": "stu_vy",
+      "full_name": "Ngô Khánh Vy",
+      "dob": "2011-04-11",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": ""
+    },
+    {
+      "id": "stu_duc",
+      "full_name": "Võ Minh Đức",
+      "dob": "2012-02-17",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": "Prepaid hết buổi học — đã học T4 chưa đóng"
+    },
+    {
+      "id": "stu_phuc",
+      "full_name": "Trần Anh Phúc",
+      "dob": "2012-08-05",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": ""
+    },
+    {
+      "id": "stu_han",
+      "full_name": "Phạm Gia Hân",
+      "dob": "2014-06-21",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": ""
+    },
+    {
+      "id": "stu_bao",
+      "full_name": "Bùi Quốc Bảo",
+      "dob": "2010-12-03",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": "Nhắc học phí Zalo thất bại"
+    },
+    {
+      "id": "stu_khanh",
+      "full_name": "Trần Quốc Khánh",
+      "dob": "2011-08-09",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": "Lớp Toán 9 T3·T5 — vắng T5, học bù CN ca T7·CN"
+    },
+    {
+      "id": "stu_dung",
+      "full_name": "Lê Mỹ Dung",
+      "dob": "2011-02-28",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": ""
+    },
+    {
+      "id": "stu_nhat",
+      "full_name": "Ngô Nhật Minh",
+      "dob": "2011-10-15",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": ""
+    },
+    {
+      "id": "stu_tung",
+      "full_name": "Vũ Thanh Tùng",
+      "dob": "2011-06-04",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": ""
+    },
+    {
+      "id": "stu_chi",
+      "full_name": "Bùi Hà Chi",
+      "dob": "2011-12-21",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": "Lớp Anh 9 T2·T5 — vắng T2, học bù CN ca T7·CN"
+    },
+    {
+      "id": "stu_khang",
+      "full_name": "Đỗ Minh Khang",
+      "dob": "2011-03-03",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": ""
+    },
+    {
+      "id": "stu_phuonganh",
+      "full_name": "Mai Phương Anh",
+      "dob": "2011-07-19",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": ""
+    },
+    {
+      "id": "stu_long",
+      "full_name": "Đỗ Minh Long",
+      "dob": "2010-04-08",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": "1 kèm 1 — tính theo buổi"
+    },
+    {
+      "id": "stu_my",
+      "full_name": "Mai Hà My",
+      "dob": "2011-02-14",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": "Combo Toán + Writing"
+    },
+    {
+      "id": "stu_phong",
+      "full_name": "Ngô Nhật Phong",
+      "dob": "2011-08-02",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": "Trại hè — đang giữ chỗ"
+    },
+    {
+      "id": "stu_quynh",
+      "full_name": "Phạm Khánh Quỳnh",
+      "dob": "2011-11-09",
+      "branch_id": "br_cg",
+      "phone": null,
+      "active": true,
+      "notes": "Học thử Toán 9 · CN 23/08 · chưa ghi danh"
+    }
+  ],
+  "guardians": [
+    {
+      "id": "grd_hoa",
+      "full_name": "Nguyễn Thị Hoa",
+      "phone": "0918 552 417",
+      "relationship": "Mẹ",
+      "preferred_channel": "zalo",
+      "zalo_status": "linked",
+      "zalo_user_id": "zalo_hoa",
+      "consent": true
+    },
+    {
+      "id": "grd_mai",
+      "full_name": "Lê Thị Mai",
+      "phone": "0987 654 321",
+      "relationship": "Mẹ",
+      "preferred_channel": "zalo",
+      "zalo_status": "linked",
+      "zalo_user_id": "zalo_mai",
+      "consent": true
+    },
+    {
+      "id": "grd_oanh",
+      "full_name": "Trần Thị Oanh",
+      "phone": "0938 120 456",
+      "relationship": "Mẹ",
+      "preferred_channel": "zalo",
+      "zalo_status": "pending",
+      "zalo_user_id": null,
+      "consent": false
+    },
+    {
+      "id": "grd_hanh",
+      "full_name": "Nguyễn Thị Hạnh",
+      "phone": "0902 331 774",
+      "relationship": "Mẹ",
+      "preferred_channel": "zalo",
+      "zalo_status": "linked",
+      "zalo_user_id": "zalo_hanh",
+      "consent": true
+    },
+    {
+      "id": "grd_thanh",
+      "full_name": "Võ Văn Thành",
+      "phone": "0913 667 209",
+      "relationship": "Bố",
+      "preferred_channel": "zalo",
+      "zalo_status": "linked",
+      "zalo_user_id": "zalo_thanh",
+      "consent": true
+    },
+    {
+      "id": "grd_lanme",
+      "full_name": "Phạm Thị Hồng",
+      "phone": "0976 445 012",
+      "relationship": "Mẹ",
+      "preferred_channel": "zalo",
+      "zalo_status": "linked",
+      "zalo_user_id": "zalo_hong",
+      "consent": true
+    },
+    {
+      "id": "grd_binh",
+      "full_name": "Trần Văn Bình",
+      "phone": "0903 123 456",
+      "relationship": "Bố",
+      "preferred_channel": "zalo",
+      "zalo_status": "failed",
+      "zalo_user_id": "zalo_binh",
+      "consent": true
+    },
+    {
+      "id": "grd_yen",
+      "full_name": "Trần Thị Yến",
+      "phone": "0912 880 441",
+      "relationship": "Mẹ",
+      "preferred_channel": "zalo",
+      "zalo_status": "linked",
+      "zalo_user_id": "zalo_yen",
+      "consent": true
+    },
+    {
+      "id": "grd_huong",
+      "full_name": "Lê Thị Hương",
+      "phone": "0983 221 067",
+      "relationship": "Mẹ",
+      "preferred_channel": "zalo",
+      "zalo_status": "linked",
+      "zalo_user_id": "zalo_huong",
+      "consent": true
+    },
+    {
+      "id": "grd_son",
+      "full_name": "Ngô Văn Sơn",
+      "phone": "0904 556 812",
+      "relationship": "Bố",
+      "preferred_channel": "zalo",
+      "zalo_status": "linked",
+      "zalo_user_id": "zalo_son",
+      "consent": true
+    },
+    {
+      "id": "grd_thao",
+      "full_name": "Vũ Thị Thảo",
+      "phone": "0977 334 190",
+      "relationship": "Mẹ",
+      "preferred_channel": "zalo",
+      "zalo_status": "pending",
+      "zalo_user_id": null,
+      "consent": false
+    },
+    {
+      "id": "grd_quyen",
+      "full_name": "Bùi Thị Quyên",
+      "phone": "0936 778 204",
+      "relationship": "Mẹ",
+      "preferred_channel": "zalo",
+      "zalo_status": "linked",
+      "zalo_user_id": "zalo_quyen",
+      "consent": true
+    },
+    {
+      "id": "grd_phuong",
+      "full_name": "Đỗ Thị Phương",
+      "phone": "0918 662 335",
+      "relationship": "Mẹ",
+      "preferred_channel": "zalo",
+      "zalo_status": "linked",
+      "zalo_user_id": "zalo_phuong",
+      "consent": true
+    },
+    {
+      "id": "grd_tram",
+      "full_name": "Mai Thị Trâm",
+      "phone": "0902 449 871",
+      "relationship": "Mẹ",
+      "preferred_channel": "zalo",
+      "zalo_status": "linked",
+      "zalo_user_id": "zalo_tram",
+      "consent": true
+    },
+    {
+      "id": "grd_quynh",
+      "full_name": "Phạm Thị Hương",
+      "phone": "0912 440 118",
+      "relationship": "Mẹ",
+      "preferred_channel": "zalo",
+      "zalo_status": "pending",
+      "zalo_user_id": null,
+      "consent": false
+    }
+  ],
+  "student_guardians": [
+    {
+      "student_id": "stu_an",
+      "guardian_id": "grd_hoa",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_ngoc",
+      "guardian_id": "grd_oanh",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_nam",
+      "guardian_id": "grd_mai",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_linh",
+      "guardian_id": "grd_hanh",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_minh",
+      "guardian_id": "grd_hanh",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_ha",
+      "guardian_id": "grd_hanh",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_vy",
+      "guardian_id": "grd_mai",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_duc",
+      "guardian_id": "grd_thanh",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_phuc",
+      "guardian_id": "grd_thanh",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_han",
+      "guardian_id": "grd_lanme",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_bao",
+      "guardian_id": "grd_binh",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_khanh",
+      "guardian_id": "grd_yen",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_dung",
+      "guardian_id": "grd_huong",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_nhat",
+      "guardian_id": "grd_son",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_tung",
+      "guardian_id": "grd_thao",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_chi",
+      "guardian_id": "grd_quyen",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_khang",
+      "guardian_id": "grd_phuong",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_phuonganh",
+      "guardian_id": "grd_tram",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_long",
+      "guardian_id": "grd_thanh",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_my",
+      "guardian_id": "grd_mai",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_phong",
+      "guardian_id": "grd_binh",
+      "is_primary": true,
+      "billing_contact": true
+    },
+    {
+      "student_id": "stu_quynh",
+      "guardian_id": "grd_quynh",
+      "is_primary": true,
+      "billing_contact": true
+    }
+  ],
+  "classes": [
+    {
+      "id": "cls_toan9",
+      "branch_id": "br_cg",
+      "name": "Toán 9 · T7–CN",
+      "default_teacher_id": "tch_huy",
+      "default_room_id": "rm_201",
+      "capacity": 12,
+      "recurrence": {
+        "weekdays": [
+          6,
+          0
+        ],
+        "start_time": "08:00",
+        "end_time": "09:30",
+        "duration_min": 90,
+        "days": [
+          {
+            "weekday": 6,
+            "start_time": "08:00"
+          },
+          {
+            "weekday": 0,
+            "start_time": "08:00"
+          }
+        ]
+      },
+      "start_date": "2026-06-07",
+      "end_date": null,
+      "billing_mode": "monthly",
+      "fee": 1200000,
+      "active": true,
+      "content_key": "toan9",
+      "course_id": "crs_toan9",
+      "absent_deduct": "always"
+    },
+    {
+      "id": "cls_anh9",
+      "branch_id": "br_cg",
+      "name": "Anh 9 · T7–CN",
+      "default_teacher_id": "tch_lan",
+      "default_room_id": "rm_203",
+      "capacity": 10,
+      "recurrence": {
+        "weekdays": [
+          6,
+          0
+        ],
+        "start_time": "08:00",
+        "end_time": "09:30",
+        "duration_min": 90,
+        "days": [
+          {
+            "weekday": 6,
+            "start_time": "08:00"
+          },
+          {
+            "weekday": 0,
+            "start_time": "08:00"
+          }
+        ]
+      },
+      "start_date": "2026-06-07",
+      "end_date": "2026-09-27",
+      "billing_mode": "course",
+      "fee": 3600000,
+      "course_total_sessions": 12,
+      "active": true,
+      "content_key": "anh9",
+      "course_id": "crs_anh9",
+      "absent_deduct": "always"
+    },
+    {
+      "id": "cls_toan8",
+      "branch_id": "br_cg",
+      "name": "Toán 8 · T4–CN",
+      "default_teacher_id": "tch_huy",
+      "default_room_id": "rm_102",
+      "capacity": 8,
+      "recurrence": {
+        "weekdays": [
+          3,
+          0
+        ],
+        "start_time": "14:00",
+        "end_time": "15:30",
+        "duration_min": 90,
+        "days": [
+          {
+            "weekday": 3,
+            "start_time": "14:00"
+          },
+          {
+            "weekday": 0,
+            "start_time": "14:00"
+          }
+        ]
+      },
+      "start_date": "2026-07-02",
+      "end_date": null,
+      "billing_mode": "prepaid_session",
+      "fee": 250000,
+      "active": true,
+      "content_key": "toan8",
+      "course_id": "crs_toan8"
+    },
+    {
+      "id": "cls_anh6",
+      "branch_id": "br_cg",
+      "name": "Anh 6 · T4–CN",
+      "default_teacher_id": "tch_lan",
+      "default_room_id": "rm_105",
+      "capacity": 10,
+      "recurrence": {
+        "weekdays": [
+          3,
+          0
+        ],
+        "start_time": "16:00",
+        "end_time": "17:30",
+        "duration_min": 90,
+        "days": [
+          {
+            "weekday": 3,
+            "start_time": "16:00"
+          },
+          {
+            "weekday": 0,
+            "start_time": "16:00"
+          }
+        ]
+      },
+      "start_date": "2026-07-02",
+      "end_date": null,
+      "billing_mode": "monthly",
+      "fee": 900000,
+      "active": true,
+      "content_key": "anh6",
+      "course_id": "crs_anh6"
+    },
+    {
+      "id": "cls_ly10",
+      "branch_id": "br_cg",
+      "name": "Lý 10 · T3–T6",
+      "default_teacher_id": "tch_huy",
+      "default_room_id": "rm_201",
+      "capacity": 10,
+      "recurrence": {
+        "weekdays": [
+          2,
+          5
+        ],
+        "start_time": "18:00",
+        "end_time": "19:30",
+        "duration_min": 90,
+        "days": [
+          {
+            "weekday": 2,
+            "start_time": "18:00"
+          },
+          {
+            "weekday": 5,
+            "start_time": "18:00"
+          }
+        ]
+      },
+      "start_date": "2026-06-16",
+      "end_date": null,
+      "billing_mode": "monthly",
+      "fee": 1100000,
+      "active": true,
+      "life": "finished",
+      "content_key": "ly10",
+      "course_id": "crs_ly10"
+    },
+    {
+      "id": "cls_toan9_t35",
+      "branch_id": "br_cg",
+      "name": "Toán 9 · T3–T5",
+      "content_key": "toan9",
+      "default_teacher_id": "tch_huy",
+      "default_room_id": "rm_201",
+      "capacity": 10,
+      "recurrence": {
+        "weekdays": [
+          2,
+          4
+        ],
+        "start_time": "16:00",
+        "end_time": "17:30",
+        "duration_min": 90,
+        "days": [
+          {
+            "weekday": 2,
+            "start_time": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start_time": "16:00"
+          }
+        ]
+      },
+      "start_date": "2026-06-16",
+      "end_date": null,
+      "billing_mode": "monthly",
+      "fee": 1200000,
+      "active": true,
+      "course_id": "crs_toan9",
+      "absent_deduct": "on_makeup"
+    },
+    {
+      "id": "cls_anh9_t24",
+      "branch_id": "br_cg",
+      "name": "Anh 9 · T2–T5",
+      "content_key": "anh9",
+      "default_teacher_id": "tch_lan",
+      "default_room_id": "rm_203",
+      "capacity": 8,
+      "recurrence": {
+        "weekdays": [
+          1,
+          4
+        ],
+        "start_time": "14:00",
+        "end_time": "15:30",
+        "duration_min": 90,
+        "days": [
+          {
+            "weekday": 1,
+            "start_time": "14:00"
+          },
+          {
+            "weekday": 4,
+            "start_time": "14:00"
+          }
+        ]
+      },
+      "start_date": "2026-06-16",
+      "end_date": "2026-09-27",
+      "billing_mode": "course",
+      "fee": 3600000,
+      "course_total_sessions": 12,
+      "active": true,
+      "course_id": "crs_anh9"
+    },
+    {
+      "id": "cls_toan11",
+      "branch_id": "br_cg",
+      "name": "Toán 11 · T5",
+      "content_key": "toan11",
+      "course_id": "crs_toan11",
+      "default_teacher_id": "tch_huy",
+      "default_room_id": "rm_102",
+      "capacity": 1,
+      "recurrence": {
+        "weekdays": [
+          4
+        ],
+        "start_time": "17:00",
+        "end_time": "18:00",
+        "duration_min": 60,
+        "days": [
+          {
+            "weekday": 4,
+            "start_time": "17:00"
+          }
+        ]
+      },
+      "start_date": "2026-08-06",
+      "end_date": null,
+      "billing_mode": "prepaid_session",
+      "fee": 400000,
+      "active": true
+    },
+    {
+      "id": "cls_combo9",
+      "branch_id": "br_cg",
+      "name": "Combo 9 · T7",
+      "content_key": "combo9",
+      "course_id": "crs_combo9",
+      "default_teacher_id": "tch_lan",
+      "default_room_id": "rm_203",
+      "capacity": 8,
+      "recurrence": {
+        "weekdays": [
+          6
+        ],
+        "start_time": "10:00",
+        "end_time": "11:30",
+        "duration_min": 90,
+        "days": [
+          {
+            "weekday": 6,
+            "start_time": "10:00"
+          }
+        ]
+      },
+      "start_date": "2026-06-14",
+      "end_date": "2026-10-31",
+      "billing_mode": "course",
+      "fee": 4200000,
+      "course_total_sessions": 20,
+      "active": true
+    },
+    {
+      "id": "cls_camp",
+      "branch_id": "br_cg",
+      "name": "Trại hè · T2",
+      "content_key": "camp_toan9",
+      "course_id": "crs_camp",
+      "default_teacher_id": "tch_huy",
+      "default_room_id": "rm_201",
+      "capacity": 16,
+      "recurrence": {
+        "weekdays": [
+          1
+        ],
+        "start_time": "08:00",
+        "end_time": "11:00",
+        "duration_min": 180,
+        "days": [
+          {
+            "weekday": 1,
+            "start_time": "08:00"
+          }
+        ]
+      },
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-31",
+      "billing_mode": "course",
+      "fee": 3500000,
+      "course_total_sessions": 10,
+      "active": true
+    }
+  ],
+  "enrollments": [
+    {
+      "id": "enr_an_toan9",
+      "class_id": "cls_toan9",
+      "student_id": "stu_an",
+      "status": "active",
+      "enrolled_at": "2026-06-07",
+      "billing_mode": "monthly",
+      "paid_through": "2026-08-31",
+      "remaining_sessions": null,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_hoa"
+    },
+    {
+      "id": "enr_ngoc_toan9",
+      "class_id": "cls_toan9",
+      "student_id": "stu_ngoc",
+      "status": "active",
+      "enrolled_at": "2026-06-07",
+      "billing_mode": "monthly",
+      "paid_through": "2026-08-31",
+      "remaining_sessions": null,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_oanh"
+    },
+    {
+      "id": "enr_nam_toan9",
+      "class_id": "cls_toan9",
+      "student_id": "stu_nam",
+      "status": "active",
+      "enrolled_at": "2026-06-14",
+      "billing_mode": "monthly",
+      "paid_through": "2026-07-31",
+      "remaining_sessions": null,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_mai"
+    },
+    {
+      "id": "enr_linh_toan9",
+      "class_id": "cls_toan9",
+      "student_id": "stu_linh",
+      "status": "active",
+      "enrolled_at": "2026-06-07",
+      "billing_mode": "monthly",
+      "paid_through": "2026-08-31",
+      "remaining_sessions": null,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_hanh"
+    },
+    {
+      "id": "enr_minh_toan9",
+      "class_id": "cls_toan9",
+      "student_id": "stu_minh",
+      "status": "active",
+      "enrolled_at": "2026-06-21",
+      "billing_mode": "monthly",
+      "paid_through": "2026-08-31",
+      "remaining_sessions": null,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_hanh"
+    },
+    {
+      "id": "enr_ha_anh9",
+      "class_id": "cls_anh9",
+      "student_id": "stu_ha",
+      "status": "active",
+      "enrolled_at": "2026-06-07",
+      "billing_mode": "course",
+      "paid_through": null,
+      "remaining_sessions": 4,
+      "course_done": 8,
+      "course_total": 12,
+      "billing_contact_id": "grd_hanh"
+    },
+    {
+      "id": "enr_vy_anh9",
+      "class_id": "cls_anh9",
+      "student_id": "stu_vy",
+      "status": "active",
+      "enrolled_at": "2026-06-07",
+      "billing_mode": "course",
+      "paid_through": null,
+      "remaining_sessions": 5,
+      "course_done": 7,
+      "course_total": 12,
+      "billing_contact_id": "grd_mai"
+    },
+    {
+      "id": "enr_linh_anh9",
+      "class_id": "cls_anh9",
+      "student_id": "stu_linh",
+      "status": "active",
+      "enrolled_at": "2026-06-07",
+      "billing_mode": "course",
+      "paid_through": null,
+      "remaining_sessions": 4,
+      "course_done": 8,
+      "course_total": 12,
+      "billing_contact_id": "grd_hanh"
+    },
+    {
+      "id": "enr_duc_toan8",
+      "class_id": "cls_toan8",
+      "student_id": "stu_duc",
+      "status": "active",
+      "enrolled_at": "2026-07-02",
+      "billing_mode": "prepaid_session",
+      "paid_through": null,
+      "remaining_sessions": 0,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_thanh"
+    },
+    {
+      "id": "enr_phuc_toan8",
+      "class_id": "cls_toan8",
+      "student_id": "stu_phuc",
+      "status": "active",
+      "enrolled_at": "2026-07-02",
+      "billing_mode": "prepaid_session",
+      "paid_through": null,
+      "remaining_sessions": 2,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_thanh"
+    },
+    {
+      "id": "enr_han_anh6",
+      "class_id": "cls_anh6",
+      "student_id": "stu_han",
+      "status": "active",
+      "enrolled_at": "2026-07-02",
+      "billing_mode": "monthly",
+      "paid_through": "2026-08-31",
+      "remaining_sessions": null,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_lanme"
+    },
+    {
+      "id": "enr_bao_ly10",
+      "class_id": "cls_ly10",
+      "student_id": "stu_bao",
+      "status": "paused",
+      "enrolled_at": "2026-06-16",
+      "billing_mode": "monthly",
+      "paid_through": "2026-07-31",
+      "remaining_sessions": null,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_binh"
+    },
+    {
+      "id": "enr_khanh_toan9b",
+      "class_id": "cls_toan9_t35",
+      "student_id": "stu_khanh",
+      "status": "active",
+      "enrolled_at": "2026-06-16",
+      "billing_mode": "monthly",
+      "paid_through": "2026-08-31",
+      "remaining_sessions": null,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_yen"
+    },
+    {
+      "id": "enr_dung_toan9b",
+      "class_id": "cls_toan9_t35",
+      "student_id": "stu_dung",
+      "status": "active",
+      "enrolled_at": "2026-06-16",
+      "billing_mode": "monthly",
+      "paid_through": "2026-08-31",
+      "remaining_sessions": null,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_huong"
+    },
+    {
+      "id": "enr_nhat_toan9b",
+      "class_id": "cls_toan9_t35",
+      "student_id": "stu_nhat",
+      "status": "active",
+      "enrolled_at": "2026-06-16",
+      "billing_mode": "monthly",
+      "paid_through": "2026-08-31",
+      "remaining_sessions": null,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_son"
+    },
+    {
+      "id": "enr_tung_toan9b",
+      "class_id": "cls_toan9_t35",
+      "student_id": "stu_tung",
+      "status": "active",
+      "enrolled_at": "2026-07-07",
+      "billing_mode": "monthly",
+      "paid_through": "2026-08-31",
+      "remaining_sessions": null,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_thao"
+    },
+    {
+      "id": "enr_chi_anh9b",
+      "class_id": "cls_anh9_t24",
+      "student_id": "stu_chi",
+      "status": "active",
+      "enrolled_at": "2026-06-16",
+      "billing_mode": "course",
+      "paid_through": null,
+      "remaining_sessions": 8,
+      "course_done": 4,
+      "course_total": 12,
+      "billing_contact_id": "grd_quyen"
+    },
+    {
+      "id": "enr_khang_anh9b",
+      "class_id": "cls_anh9_t24",
+      "student_id": "stu_khang",
+      "status": "active",
+      "enrolled_at": "2026-06-16",
+      "billing_mode": "course",
+      "paid_through": null,
+      "remaining_sessions": 9,
+      "course_done": 3,
+      "course_total": 12,
+      "billing_contact_id": "grd_phuong"
+    },
+    {
+      "id": "enr_pa_anh9b",
+      "class_id": "cls_anh9_t24",
+      "student_id": "stu_phuonganh",
+      "status": "active",
+      "enrolled_at": "2026-06-16",
+      "billing_mode": "course",
+      "paid_through": null,
+      "remaining_sessions": 8,
+      "course_done": 4,
+      "course_total": 12,
+      "billing_contact_id": "grd_tram"
+    },
+    {
+      "id": "enr_long_toan11",
+      "class_id": "cls_toan11",
+      "student_id": "stu_long",
+      "status": "active",
+      "enrolled_at": "2026-08-06",
+      "billing_mode": "prepaid_session",
+      "paid_through": null,
+      "remaining_sessions": 0,
+      "course_done": null,
+      "course_total": null,
+      "billing_contact_id": "grd_thanh",
+      "deposit_held": 0
+    },
+    {
+      "id": "enr_my_combo9",
+      "class_id": "cls_combo9",
+      "student_id": "stu_my",
+      "status": "active",
+      "enrolled_at": "2026-06-14",
+      "billing_mode": "course",
+      "paid_through": null,
+      "remaining_sessions": 0,
+      "course_done": 0,
+      "course_total": 20,
+      "billing_contact_id": "grd_mai",
+      "deposit_held": 0
+    },
+    {
+      "id": "enr_phong_camp",
+      "class_id": "cls_camp",
+      "student_id": "stu_phong",
+      "status": "active",
+      "enrolled_at": "2026-08-03",
+      "billing_mode": "course",
+      "paid_through": null,
+      "remaining_sessions": 0,
+      "course_done": 0,
+      "course_total": 10,
+      "billing_contact_id": "grd_binh",
+      "deposit_held": 0
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_an_t8",
+      "enrollment_id": "enr_an_toan9",
+      "student_id": "stu_an",
+      "class_id": "cls_toan9",
+      "amount": 1200000,
+      "method": "cash",
+      "paid_at": "2026-08-01",
+      "sessions": null,
+      "paid_through": "2026-08-31",
+      "note": "Tháng 8",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_ngoc_t8",
+      "enrollment_id": "enr_ngoc_toan9",
+      "student_id": "stu_ngoc",
+      "class_id": "cls_toan9",
+      "amount": 1200000,
+      "method": "transfer",
+      "paid_at": "2026-08-01",
+      "sessions": null,
+      "paid_through": "2026-08-31",
+      "note": "Tháng 8",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_nam_t7",
+      "enrollment_id": "enr_nam_toan9",
+      "student_id": "stu_nam",
+      "class_id": "cls_toan9",
+      "amount": 1200000,
+      "method": "cash",
+      "paid_at": "2026-07-01",
+      "sessions": null,
+      "paid_through": "2026-07-31",
+      "note": "Tháng 7 — chưa đóng T8",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_linh_t8",
+      "enrollment_id": "enr_linh_toan9",
+      "student_id": "stu_linh",
+      "class_id": "cls_toan9",
+      "amount": 1200000,
+      "method": "momo",
+      "paid_at": "2026-08-01",
+      "sessions": null,
+      "paid_through": "2026-08-31",
+      "note": "Tháng 8",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_minh_t8",
+      "enrollment_id": "enr_minh_toan9",
+      "student_id": "stu_minh",
+      "class_id": "cls_toan9",
+      "amount": 1200000,
+      "method": "transfer",
+      "paid_at": "2026-08-01",
+      "sessions": null,
+      "paid_through": "2026-08-31",
+      "note": "Tháng 8",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_ha_khoa",
+      "enrollment_id": "enr_ha_anh9",
+      "student_id": "stu_ha",
+      "class_id": "cls_anh9",
+      "amount": 3600000,
+      "method": "transfer",
+      "paid_at": "2026-06-07",
+      "sessions": 12,
+      "paid_through": null,
+      "note": "Gói 12 buổi",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_vy_khoa",
+      "enrollment_id": "enr_vy_anh9",
+      "student_id": "stu_vy",
+      "class_id": "cls_anh9",
+      "amount": 3600000,
+      "method": "cash",
+      "paid_at": "2026-06-07",
+      "sessions": 12,
+      "paid_through": null,
+      "note": "Gói 12 buổi",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_linh_khoa",
+      "enrollment_id": "enr_linh_anh9",
+      "student_id": "stu_linh",
+      "class_id": "cls_anh9",
+      "amount": 3600000,
+      "method": "transfer",
+      "paid_at": "2026-06-07",
+      "sessions": 12,
+      "paid_through": null,
+      "note": "Gói 12 buổi",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_duc_8",
+      "enrollment_id": "enr_duc_toan8",
+      "student_id": "stu_duc",
+      "class_id": "cls_toan8",
+      "amount": 2000000,
+      "method": "cash",
+      "paid_at": "2026-07-02",
+      "sessions": 8,
+      "paid_through": null,
+      "note": "8 buổi học prepaid",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_phuc_8",
+      "enrollment_id": "enr_phuc_toan8",
+      "student_id": "stu_phuc",
+      "class_id": "cls_toan8",
+      "amount": 2000000,
+      "method": "transfer",
+      "paid_at": "2026-07-02",
+      "sessions": 8,
+      "paid_through": null,
+      "note": "8 buổi học prepaid",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_han_t8",
+      "enrollment_id": "enr_han_anh6",
+      "student_id": "stu_han",
+      "class_id": "cls_anh6",
+      "amount": 900000,
+      "method": "momo",
+      "paid_at": "2026-08-01",
+      "sessions": null,
+      "paid_through": "2026-08-31",
+      "note": "Tháng 8",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_bao_t7",
+      "enrollment_id": "enr_bao_ly10",
+      "student_id": "stu_bao",
+      "class_id": "cls_ly10",
+      "amount": 1100000,
+      "method": "cash",
+      "paid_at": "2026-07-01",
+      "sessions": null,
+      "paid_through": "2026-07-31",
+      "note": "Tháng 7 — chưa đóng T8",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_khanh_t8",
+      "enrollment_id": "enr_khanh_toan9b",
+      "student_id": "stu_khanh",
+      "class_id": "cls_toan9_t35",
+      "amount": 1200000,
+      "method": "transfer",
+      "paid_at": "2026-08-01",
+      "sessions": null,
+      "paid_through": "2026-08-31",
+      "note": "Tháng 8",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_dung_t8",
+      "enrollment_id": "enr_dung_toan9b",
+      "student_id": "stu_dung",
+      "class_id": "cls_toan9_t35",
+      "amount": 1200000,
+      "method": "cash",
+      "paid_at": "2026-08-01",
+      "sessions": null,
+      "paid_through": "2026-08-31",
+      "note": "Tháng 8",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_nhat_t8",
+      "enrollment_id": "enr_nhat_toan9b",
+      "student_id": "stu_nhat",
+      "class_id": "cls_toan9_t35",
+      "amount": 1200000,
+      "method": "momo",
+      "paid_at": "2026-08-01",
+      "sessions": null,
+      "paid_through": "2026-08-31",
+      "note": "Tháng 8",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_tung_t8",
+      "enrollment_id": "enr_tung_toan9b",
+      "student_id": "stu_tung",
+      "class_id": "cls_toan9_t35",
+      "amount": 1200000,
+      "method": "transfer",
+      "paid_at": "2026-08-01",
+      "sessions": null,
+      "paid_through": "2026-08-31",
+      "note": "Tháng 8",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_chi_khoa",
+      "enrollment_id": "enr_chi_anh9b",
+      "student_id": "stu_chi",
+      "class_id": "cls_anh9_t24",
+      "amount": 3600000,
+      "method": "transfer",
+      "paid_at": "2026-06-16",
+      "sessions": 12,
+      "paid_through": null,
+      "note": "Gói 12 buổi",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_khang_khoa",
+      "enrollment_id": "enr_khang_anh9b",
+      "student_id": "stu_khang",
+      "class_id": "cls_anh9_t24",
+      "amount": 3600000,
+      "method": "cash",
+      "paid_at": "2026-06-16",
+      "sessions": 12,
+      "paid_through": null,
+      "note": "Gói 12 buổi",
+      "actor": "Nguyễn Thu Trang"
+    },
+    {
+      "id": "pay_pa_khoa",
+      "enrollment_id": "enr_pa_anh9b",
+      "student_id": "stu_phuonganh",
+      "class_id": "cls_anh9_t24",
+      "amount": 3600000,
+      "method": "momo",
+      "paid_at": "2026-06-16",
+      "sessions": 12,
+      "paid_through": null,
+      "note": "Gói 12 buổi",
+      "actor": "Nguyễn Thu Trang"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "les_ly10_1808",
+      "class_id": "cls_ly10",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_201",
+      "start": "2026-08-18T18:00:00+07:00",
+      "end": "2026-08-18T19:30:00+07:00",
+      "status": "completed",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_ly10_1908",
+      "class_id": "cls_ly10",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_201",
+      "start": "2026-08-19T18:00:00+07:00",
+      "end": "2026-08-19T19:30:00+07:00",
+      "status": "cancelled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_toan8_1908",
+      "class_id": "cls_toan8",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_102",
+      "start": "2026-08-19T14:00:00+07:00",
+      "end": "2026-08-19T15:30:00+07:00",
+      "status": "completed",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_anh6_1908",
+      "class_id": "cls_anh6",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_lan",
+      "room_id": "rm_105",
+      "start": "2026-08-19T16:00:00+07:00",
+      "end": "2026-08-19T17:30:00+07:00",
+      "status": "completed",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_ly10_2108",
+      "class_id": "cls_ly10",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_201",
+      "start": "2026-08-21T18:00:00+07:00",
+      "end": "2026-08-21T19:30:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_toan9_2208",
+      "class_id": "cls_toan9",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_201",
+      "start": "2026-08-22T08:00:00+07:00",
+      "end": "2026-08-22T09:30:00+07:00",
+      "status": "completed",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_anh9_2208",
+      "class_id": "cls_anh9",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_lan",
+      "room_id": "rm_203",
+      "start": "2026-08-22T08:00:00+07:00",
+      "end": "2026-08-22T09:30:00+07:00",
+      "status": "completed",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_toan9_2308",
+      "class_id": "cls_toan9",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_201",
+      "start": "2026-08-23T08:00:00+07:00",
+      "end": "2026-08-23T09:30:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_anh9_2308",
+      "class_id": "cls_anh9",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_lan",
+      "room_id": "rm_203",
+      "start": "2026-08-23T08:00:00+07:00",
+      "end": "2026-08-23T09:30:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_toan8_2308",
+      "class_id": "cls_toan8",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_102",
+      "start": "2026-08-23T14:00:00+07:00",
+      "end": "2026-08-23T15:30:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_anh6_2308",
+      "class_id": "cls_anh6",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_105",
+      "start": "2026-08-23T16:00:00+07:00",
+      "end": "2026-08-23T17:30:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": true
+    },
+    {
+      "id": "les_toan9_2908",
+      "class_id": "cls_toan9",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_201",
+      "start": "2026-08-29T08:00:00+07:00",
+      "end": "2026-08-29T09:30:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_anh9_2908",
+      "class_id": "cls_anh9",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_lan",
+      "room_id": "rm_203",
+      "start": "2026-08-29T08:00:00+07:00",
+      "end": "2026-08-29T09:30:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_toan9b_1808",
+      "class_id": "cls_toan9_t35",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_201",
+      "start": "2026-08-18T16:00:00+07:00",
+      "end": "2026-08-18T17:30:00+07:00",
+      "status": "completed",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_toan9b_2008",
+      "class_id": "cls_toan9_t35",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_201",
+      "start": "2026-08-20T16:00:00+07:00",
+      "end": "2026-08-20T17:30:00+07:00",
+      "status": "completed",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_toan9b_2508",
+      "class_id": "cls_toan9_t35",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_201",
+      "start": "2026-08-25T16:00:00+07:00",
+      "end": "2026-08-25T17:30:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_toan9b_2708",
+      "class_id": "cls_toan9_t35",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_201",
+      "start": "2026-08-27T16:00:00+07:00",
+      "end": "2026-08-27T17:30:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_anh9b_1708",
+      "class_id": "cls_anh9_t24",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_lan",
+      "room_id": "rm_203",
+      "start": "2026-08-17T14:00:00+07:00",
+      "end": "2026-08-17T15:30:00+07:00",
+      "status": "completed",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_anh9b_2008",
+      "class_id": "cls_anh9_t24",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_lan",
+      "room_id": "rm_203",
+      "start": "2026-08-20T14:00:00+07:00",
+      "end": "2026-08-20T15:30:00+07:00",
+      "status": "completed",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_anh9b_2408",
+      "class_id": "cls_anh9_t24",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_lan",
+      "room_id": "rm_203",
+      "start": "2026-08-24T14:00:00+07:00",
+      "end": "2026-08-24T15:30:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_anh9b_2708",
+      "class_id": "cls_anh9_t24",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_lan",
+      "room_id": "rm_203",
+      "start": "2026-08-27T14:00:00+07:00",
+      "end": "2026-08-27T15:30:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_toan11_2708",
+      "class_id": "cls_toan11",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_102",
+      "start": "2026-08-27T17:00:00+07:00",
+      "end": "2026-08-27T18:00:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_combo9_2908",
+      "class_id": "cls_combo9",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_lan",
+      "room_id": "rm_203",
+      "start": "2026-08-29T10:00:00+07:00",
+      "end": "2026-08-29T11:30:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    },
+    {
+      "id": "les_camp_2408",
+      "class_id": "cls_camp",
+      "branch_id": "br_cg",
+      "teacher_id": "tch_huy",
+      "room_id": "rm_201",
+      "start": "2026-08-24T08:00:00+07:00",
+      "end": "2026-08-24T11:00:00+07:00",
+      "status": "scheduled",
+      "is_makeup": false,
+      "original_lesson_id": null,
+      "substitute": false
+    }
+  ],
+  "attendance": [
+    {
+      "id": "att_ly10_1808_bao",
+      "lesson_id": "les_ly10_1808",
+      "student_id": "stu_bao",
+      "enrollment_id": "enr_bao_ly10",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": true
+    },
+    {
+      "id": "att_toan8_1908_duc",
+      "lesson_id": "les_toan8_1908",
+      "student_id": "stu_duc",
+      "enrollment_id": "enr_duc_toan8",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": true
+    },
+    {
+      "id": "att_toan8_1908_phuc",
+      "lesson_id": "les_toan8_1908",
+      "student_id": "stu_phuc",
+      "enrollment_id": "enr_phuc_toan8",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_anh6_1908_han",
+      "lesson_id": "les_anh6_1908",
+      "student_id": "stu_han",
+      "enrollment_id": "enr_han_anh6",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_toan9_2208_an",
+      "lesson_id": "les_toan9_2208",
+      "student_id": "stu_an",
+      "enrollment_id": "enr_an_toan9",
+      "status": "absent",
+      "reason": "Ốm, mẹ báo tối T6",
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_toan9_2208_ngoc",
+      "lesson_id": "les_toan9_2208",
+      "student_id": "stu_ngoc",
+      "enrollment_id": "enr_ngoc_toan9",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_toan9_2208_nam",
+      "lesson_id": "les_toan9_2208",
+      "student_id": "stu_nam",
+      "enrollment_id": "enr_nam_toan9",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": true
+    },
+    {
+      "id": "att_toan9_2208_linh",
+      "lesson_id": "les_toan9_2208",
+      "student_id": "stu_linh",
+      "enrollment_id": "enr_linh_toan9",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_toan9_2208_minh",
+      "lesson_id": "les_toan9_2208",
+      "student_id": "stu_minh",
+      "enrollment_id": "enr_minh_toan9",
+      "status": "late",
+      "reason": "Xe buýt",
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_anh9_2208_ha",
+      "lesson_id": "les_anh9_2208",
+      "student_id": "stu_ha",
+      "enrollment_id": "enr_ha_anh9",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_anh9_2208_vy",
+      "lesson_id": "les_anh9_2208",
+      "student_id": "stu_vy",
+      "enrollment_id": "enr_vy_anh9",
+      "status": "absent",
+      "reason": "Về quê, mẹ báo T7",
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_anh9_2208_linh",
+      "lesson_id": "les_anh9_2208",
+      "student_id": "stu_linh",
+      "enrollment_id": "enr_linh_anh9",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_toan9b_1808_khanh",
+      "lesson_id": "les_toan9b_1808",
+      "student_id": "stu_khanh",
+      "enrollment_id": "enr_khanh_toan9b",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_toan9b_1808_dung",
+      "lesson_id": "les_toan9b_1808",
+      "student_id": "stu_dung",
+      "enrollment_id": "enr_dung_toan9b",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_toan9b_1808_nhat",
+      "lesson_id": "les_toan9b_1808",
+      "student_id": "stu_nhat",
+      "enrollment_id": "enr_nhat_toan9b",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_toan9b_1808_tung",
+      "lesson_id": "les_toan9b_1808",
+      "student_id": "stu_tung",
+      "enrollment_id": "enr_tung_toan9b",
+      "status": "late",
+      "reason": "Tắc đường",
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_toan9b_2008_khanh",
+      "lesson_id": "les_toan9b_2008",
+      "student_id": "stu_khanh",
+      "enrollment_id": "enr_khanh_toan9b",
+      "status": "absent",
+      "reason": "Sốt, mẹ báo sáng T5",
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_toan9b_2008_dung",
+      "lesson_id": "les_toan9b_2008",
+      "student_id": "stu_dung",
+      "enrollment_id": "enr_dung_toan9b",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_toan9b_2008_nhat",
+      "lesson_id": "les_toan9b_2008",
+      "student_id": "stu_nhat",
+      "enrollment_id": "enr_nhat_toan9b",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_toan9b_2008_tung",
+      "lesson_id": "les_toan9b_2008",
+      "student_id": "stu_tung",
+      "enrollment_id": "enr_tung_toan9b",
+      "status": "absent",
+      "reason": "Bận thi HSG",
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_anh9b_1708_chi",
+      "lesson_id": "les_anh9b_1708",
+      "student_id": "stu_chi",
+      "enrollment_id": "enr_chi_anh9b",
+      "status": "absent",
+      "reason": "Đi khám răng",
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_anh9b_1708_khang",
+      "lesson_id": "les_anh9b_1708",
+      "student_id": "stu_khang",
+      "enrollment_id": "enr_khang_anh9b",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_anh9b_1708_pa",
+      "lesson_id": "les_anh9b_1708",
+      "student_id": "stu_phuonganh",
+      "enrollment_id": "enr_pa_anh9b",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_anh9b_2008_chi",
+      "lesson_id": "les_anh9b_2008",
+      "student_id": "stu_chi",
+      "enrollment_id": "enr_chi_anh9b",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_anh9b_2008_khang",
+      "lesson_id": "les_anh9b_2008",
+      "student_id": "stu_khang",
+      "enrollment_id": "enr_khang_anh9b",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    },
+    {
+      "id": "att_anh9b_2008_pa",
+      "lesson_id": "les_anh9b_2008",
+      "student_id": "stu_phuonganh",
+      "enrollment_id": "enr_pa_anh9b",
+      "status": "present",
+      "reason": null,
+      "unpaid_flag": false
+    }
+  ],
+  "makeups": [
+    {
+      "id": "mkp_an_toan9",
+      "student_id": "stu_an",
+      "enrollment_id": "enr_an_toan9",
+      "source_lesson_id": "les_toan9_2208",
+      "option": 1,
+      "target_lesson_id": "les_toan9_2908",
+      "adhoc": null,
+      "status": "waiting_parent",
+      "offered_at": "2026-08-22T10:12:00+07:00",
+      "zalo_event_id": "zev_z2_an"
+    },
+    {
+      "id": "mkp_khanh_toan9b",
+      "student_id": "stu_khanh",
+      "enrollment_id": "enr_khanh_toan9b",
+      "source_lesson_id": "les_toan9b_2008",
+      "option": 3,
+      "target_lesson_id": "les_toan9_2308",
+      "adhoc": null,
+      "status": "confirmed",
+      "offered_at": "2026-08-20T17:40:00+07:00",
+      "zalo_event_id": "zev_mkp_khanh"
+    },
+    {
+      "id": "mkp_chi_anh9b",
+      "student_id": "stu_chi",
+      "enrollment_id": "enr_chi_anh9b",
+      "source_lesson_id": "les_anh9b_1708",
+      "option": 3,
+      "target_lesson_id": "les_anh9_2308",
+      "adhoc": null,
+      "status": "confirmed",
+      "offered_at": "2026-08-17T16:10:00+07:00",
+      "zalo_event_id": "zev_mkp_chi"
+    }
+  ],
+  "homework": [
+    {
+      "id": "hw_toan9_2208",
+      "lesson_id": "les_toan9_2208",
+      "title": "Đề 12 · trang 45–46",
+      "assigned_at": "2026-08-22T09:28:00+07:00"
+    },
+    {
+      "id": "hwm_an",
+      "homework_id": "hw_toan9_2208",
+      "student_id": "stu_an",
+      "mark": "missing"
+    },
+    {
+      "id": "hwm_ngoc",
+      "homework_id": "hw_toan9_2208",
+      "student_id": "stu_ngoc",
+      "mark": "done"
+    },
+    {
+      "id": "hwm_nam",
+      "homework_id": "hw_toan9_2208",
+      "student_id": "stu_nam",
+      "mark": "done"
+    },
+    {
+      "id": "hwm_minh",
+      "homework_id": "hw_toan9_2208",
+      "student_id": "stu_minh",
+      "mark": "late"
+    }
+  ],
+  "notes": [
+    {
+      "id": "nt_toan9_2208",
+      "lesson_id": "les_toan9_2208",
+      "author_id": "stf_huy",
+      "body": "An vắng. Nam đi học nhưng tháng 7 còn mở — không đuổi ra, báo giáo vụ.",
+      "at": "2026-08-22T09:31:00+07:00"
+    },
+    {
+      "id": "nt_ly10_2108",
+      "lesson_id": "les_ly10_2108",
+      "author_id": "stf_trang",
+      "body": "Huy chưa đóng điểm danh T6. Bảo vẫn nợ tháng 7.",
+      "at": "2026-08-22T21:04:00+07:00"
+    }
+  ],
+  "zalo_oa": {
+    "id": "oa_impact",
+    "tenant_id": "ten_impact",
+    "oa_name": "IMPACT Cầu Giấy",
+    "connected": true,
+    "quota_used": 186,
+    "quota_limit": 1000,
+    "webhook_ok": true,
+    "webhook_url": "https://impact.example/zalo/webhook",
+    "parent_link": "https://zalo.me/oa/impact/link",
+    "templates": [
+      {
+        "key": "absence",
+        "name": "Báo vắng",
+        "zalo_template_id": "zbs_abs_01",
+        "eligible": true
+      },
+      {
+        "key": "makeup_offer",
+        "name": "Mời học bù",
+        "zalo_template_id": "zbs_mkp_01",
+        "eligible": true
+      },
+      {
+        "key": "reminder",
+        "name": "Nhắc học phí",
+        "zalo_template_id": "zbs_fee_01",
+        "eligible": true
+      },
+      {
+        "key": "low_credit",
+        "name": "Sắp hết buổi học",
+        "zalo_template_id": "zbs_crd_01",
+        "eligible": true
+      }
+    ]
+  },
+  "zalo_events": [
+    {
+      "id": "zev_z0_hoa",
+      "template": "link",
+      "guardian_id": "grd_hoa",
+      "student_id": "stu_an",
+      "lesson_id": null,
+      "makeup_id": null,
+      "status": "delivered",
+      "sent_at": "2026-06-08T09:00:00+07:00",
+      "fail_reason": null
+    },
+    {
+      "id": "zev_z1_an",
+      "template": "absence",
+      "guardian_id": "grd_hoa",
+      "student_id": "stu_an",
+      "lesson_id": "les_toan9_2208",
+      "makeup_id": "mkp_an_toan9",
+      "status": "delivered",
+      "sent_at": "2026-08-22T10:08:00+07:00",
+      "fail_reason": null
+    },
+    {
+      "id": "zev_z2_an",
+      "template": "makeup_offer",
+      "guardian_id": "grd_hoa",
+      "student_id": "stu_an",
+      "lesson_id": "les_toan9_2208",
+      "makeup_id": "mkp_an_toan9",
+      "status": "delivered",
+      "sent_at": "2026-08-22T10:12:00+07:00",
+      "fail_reason": null
+    },
+    {
+      "id": "zev_z0_oanh",
+      "template": "link",
+      "guardian_id": "grd_oanh",
+      "student_id": "stu_ngoc",
+      "lesson_id": null,
+      "makeup_id": null,
+      "status": "pending",
+      "sent_at": "2026-08-18T11:20:00+07:00",
+      "fail_reason": null
+    },
+    {
+      "id": "zev_fee_bao",
+      "template": "reminder",
+      "guardian_id": "grd_binh",
+      "student_id": "stu_bao",
+      "lesson_id": "les_ly10_1808",
+      "makeup_id": null,
+      "status": "failed",
+      "sent_at": "2026-08-22T16:40:00+07:00",
+      "fail_reason": "OA không gửi được — user_id hết hạn"
+    },
+    {
+      "id": "zev_fee_nam",
+      "template": "reminder",
+      "guardian_id": "grd_mai",
+      "student_id": "stu_nam",
+      "lesson_id": "les_toan9_2208",
+      "makeup_id": null,
+      "status": "delivered",
+      "sent_at": "2026-08-22T11:02:00+07:00",
+      "fail_reason": null
+    },
+    {
+      "id": "zev_mkp_khanh",
+      "template": "makeup_offer",
+      "guardian_id": "grd_yen",
+      "student_id": "stu_khanh",
+      "lesson_id": "les_toan9b_2008",
+      "makeup_id": "mkp_khanh_toan9b",
+      "status": "delivered",
+      "sent_at": "2026-08-20T17:40:00+07:00",
+      "fail_reason": null
+    },
+    {
+      "id": "zev_mkp_chi",
+      "template": "makeup_offer",
+      "guardian_id": "grd_quyen",
+      "student_id": "stu_chi",
+      "lesson_id": "les_anh9b_1708",
+      "makeup_id": "mkp_chi_anh9b",
+      "status": "delivered",
+      "sent_at": "2026-08-17T16:10:00+07:00",
+      "fail_reason": null
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "ex_att_ly10",
+      "lane": "attendance_pending",
+      "lesson_id": "les_ly10_2108",
+      "student_id": "stu_bao",
+      "title": "Lý 10 T6 chưa điểm danh",
+      "detail": "Huy chưa đóng buổi 18:00–19:30 · P201",
+      "cta": "Điểm danh",
+      "tab": "attendance"
+    },
+    {
+      "id": "ex_att_toan9_today",
+      "lane": "attendance_pending",
+      "lesson_id": "les_toan9_2308",
+      "student_id": null,
+      "title": "Toán 9 CN 08:00 chưa điểm danh — có học bù",
+      "detail": "Buổi hôm nay · Huy · P201 · 5 học sinh + 1 học bù (Khánh)",
+      "cta": "Mở buổi",
+      "tab": "attendance"
+    },
+    {
+      "id": "ex_wait_an",
+      "lane": "waiting_parent",
+      "lesson_id": "les_toan9_2208",
+      "student_id": "stu_an",
+      "title": "Hoa chưa xác nhận buổi học bù của An",
+      "detail": "Đề xuất T7 29/08 08:00 · cùng lớp Toán 9",
+      "cta": "Xem học bù",
+      "tab": "makeup"
+    },
+    {
+      "id": "ex_money_nam",
+      "lane": "money",
+      "lesson_id": "les_toan9_2208",
+      "student_id": "stu_nam",
+      "title": "Nam đi học — tháng 7 còn mở",
+      "detail": "1.200.000₫ · đã điểm danh T7 · không đuổi ra",
+      "cta": "Sổ buổi học / học phí",
+      "tab": "ledger"
+    },
+    {
+      "id": "ex_money_duc",
+      "lane": "money",
+      "lesson_id": "les_toan8_1908",
+      "student_id": "stu_duc",
+      "title": "Đức đi học — hết buổi học prepaid",
+      "detail": "250.000₫/buổi học · đã điểm danh T4 · không đuổi ra",
+      "cta": "Thu học phí",
+      "tab": "ledger"
+    },
+    {
+      "id": "ex_fail_bao",
+      "lane": "delivery_failed",
+      "lesson_id": "les_ly10_1808",
+      "student_id": "stu_bao",
+      "title": "Nhắc học phí Bảo — gửi Zalo thất bại",
+      "detail": "Bình · user_id hết hạn",
+      "cta": "Gửi lại",
+      "tab": "timeline"
+    },
+    {
+      "id": "ex_need_ngoc",
+      "lane": "needs_decision",
+      "lesson_id": "les_toan9_2308",
+      "student_id": "stu_ngoc",
+      "title": "Ngọc chưa liên kết Zalo — không gửi được báo buổi",
+      "detail": "Oanh pending từ 18/08",
+      "cta": "Mở học sinh",
+      "tab": null
+    },
+    {
+      "id": "ex_need_sub",
+      "lane": "needs_decision",
+      "lesson_id": "les_anh9_2308",
+      "student_id": null,
+      "title": "Lan xin Huy dạy hộ Anh 9 CN 08:00 — trùng Toán 9",
+      "detail": "Cùng giờ với Toán 9 P201. Không ghi đè. Sửa buổi kia trước.",
+      "cta": "Xem trùng",
+      "tab": null
+    }
+  ],
+  "timeline_events": [
+    {
+      "id": "tl_khanh_bù",
+      "at": "2026-08-20T17:45:00+07:00",
+      "lesson_id": "les_toan9_2308",
+      "actor": "stf_trang",
+      "kind": "makeup",
+      "text": "Khánh nhận buổi học bù — vào Toán 9 CN 23/08 08:00 (cùng giáo trình, ca T7·CN)."
+    },
+    {
+      "id": "tl_chi_bù",
+      "at": "2026-08-17T16:15:00+07:00",
+      "lesson_id": "les_anh9_2308",
+      "actor": "stf_trang",
+      "kind": "makeup",
+      "text": "Chi nhận buổi học bù — vào Anh 9 CN 23/08 08:00 (cùng giáo trình, ca T7·CN)."
+    },
+    {
+      "id": "tl1",
+      "at": "2026-08-22T08:04:00+07:00",
+      "lesson_id": "les_toan9_2208",
+      "actor": "stf_huy",
+      "kind": "attendance",
+      "text": "Huy điểm danh Toán 9 T7. An vắng · Nam có mặt (cờ chưa đóng)."
+    },
+    {
+      "id": "tl2",
+      "at": "2026-08-22T10:08:00+07:00",
+      "lesson_id": "les_toan9_2208",
+      "actor": "stf_trang",
+      "kind": "zalo",
+      "text": "Trang gửi báo vắng cho Hoa (ZBS Báo vắng)."
+    },
+    {
+      "id": "tl3",
+      "at": "2026-08-22T10:12:00+07:00",
+      "lesson_id": "les_toan9_2208",
+      "actor": "stf_trang",
+      "kind": "zalo",
+      "text": "Trang Approve & Send buổi học bù T7 29/08 08:00. Đang chờ Hoa."
+    },
+    {
+      "id": "tl4",
+      "at": "2026-08-22T11:02:00+07:00",
+      "lesson_id": "les_toan9_2208",
+      "actor": "stf_trang",
+      "kind": "zalo",
+      "text": "Nhắc học phí Nam → Mai. Đã gửi."
+    },
+    {
+      "id": "tl5",
+      "at": "2026-08-22T16:40:00+07:00",
+      "lesson_id": "les_ly10_1808",
+      "actor": "stf_trang",
+      "kind": "zalo",
+      "text": "Nhắc học phí Bảo → Bình. Thất bại — user_id hết hạn."
+    },
+    {
+      "id": "tl6",
+      "at": "2026-08-22T20:15:00+07:00",
+      "lesson_id": "les_anh9_2308",
+      "actor": "stf_trang",
+      "kind": "conflict",
+      "text": "Chặn dạy hộ: Huy đã có Toán 9 CN 08:00 P201. Không ghi đè Anh 9."
+    },
+    {
+      "id": "tl7",
+      "at": "2026-08-22T20:22:00+07:00",
+      "lesson_id": "les_anh6_2308",
+      "actor": "stf_trang",
+      "kind": "substitute",
+      "text": "Huy dạy hộ Anh 6 CN 16:00 (Lan nghỉ). Không trùng."
+    }
+  ],
+  "courses": [
+    {
+      "id": "crs_toan9",
+      "name": "Toán 9 — Luyện thi vào 10",
+      "content_key": "toan9",
+      "subject": "Toán",
+      "level": "Lớp 9",
+      "duration_min": 90,
+      "plan": {
+        "model": "monthly",
+        "fee": 1200000,
+        "proration": true
+      },
+      "promotions": [
+        {
+          "id": "prm_toan9_sib",
+          "kind": "sibling",
+          "label": "Anh chị em −10%",
+          "value": 10,
+          "active": true
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "crs_anh9",
+      "name": "Anh 9 — Writing",
+      "content_key": "anh9",
+      "subject": "Anh",
+      "level": "Lớp 9",
+      "duration_min": 90,
+      "plan": {
+        "model": "course",
+        "fee": 3600000,
+        "course_sessions": 12,
+        "installment_n": 2,
+        "proration": false
+      },
+      "promotions": [
+        {
+          "id": "prm_anh9_early",
+          "kind": "early_bird",
+          "label": "Early-bird −300.000₫",
+          "value": 300000,
+          "active": true
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "crs_toan8",
+      "name": "Toán 8 — Nền tảng",
+      "content_key": "toan8",
+      "subject": "Toán",
+      "level": "Lớp 8",
+      "duration_min": 90,
+      "plan": {
+        "model": "prepaid",
+        "fee": 250000,
+        "pack_sessions": 8,
+        "expiry_days": 90,
+        "proration": false
+      },
+      "promotions": [
+        {
+          "id": "prm_toan8_bonus",
+          "kind": "bonus_sessions",
+          "label": "Mua 8 tặng 1",
+          "value": 1,
+          "active": true
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "crs_anh6",
+      "name": "Anh 6 — Giao tiếp",
+      "content_key": "anh6",
+      "subject": "Anh",
+      "level": "Lớp 6",
+      "duration_min": 90,
+      "plan": {
+        "model": "monthly",
+        "fee": 900000,
+        "proration": true
+      },
+      "promotions": [],
+      "active": true
+    },
+    {
+      "id": "crs_ly10",
+      "name": "Lý 10 — Cơ bản",
+      "content_key": "ly10",
+      "subject": "Lý",
+      "level": "Lớp 10",
+      "duration_min": 90,
+      "plan": {
+        "model": "monthly",
+        "fee": 1100000,
+        "proration": true
+      },
+      "promotions": [],
+      "active": true
+    },
+    {
+      "id": "crs_toan11",
+      "name": "Toán 11 — 1 kèm 1",
+      "content_key": "toan11",
+      "subject": "Toán",
+      "level": "Lớp 11",
+      "duration_min": 60,
+      "plan": {
+        "model": "per_lesson",
+        "fee": 400000,
+        "proration": false
+      },
+      "promotions": [
+        {
+          "id": "prm_toan11_first",
+          "kind": "first_pay",
+          "label": "Buổi đầu −100.000₫",
+          "value": 100000,
+          "active": true
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "crs_combo9",
+      "name": "Combo 9 — Toán + Writing",
+      "content_key": "combo9",
+      "subject": "Combo",
+      "level": "Lớp 9",
+      "duration_min": 90,
+      "plan": {
+        "model": "bundle",
+        "fee": 4200000,
+        "course_sessions": 20,
+        "bundle_labels": [
+          "Toán 9 — Luyện thi vào 10",
+          "Anh 9 — Writing"
+        ],
+        "proration": false
+      },
+      "promotions": [
+        {
+          "id": "prm_combo_prepay",
+          "kind": "prepay",
+          "label": "Trả trước −8%",
+          "value": 8,
+          "active": true
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "crs_camp",
+      "name": "Trại hè Toán 9",
+      "content_key": "camp_toan9",
+      "subject": "Toán",
+      "level": "Lớp 9",
+      "duration_min": 180,
+      "plan": {
+        "model": "deposit",
+        "fee": 3500000,
+        "deposit_amount": 500000,
+        "course_sessions": 10,
+        "proration": false
+      },
+      "promotions": [],
+      "active": true
+    }
+  ],
+  "settings": {
+    "remind_days_before": 14
+  },
+  "absent_ignores": [],
+  "remind_batches": [
+    {
+      "id": "rmb_1608",
+      "ran_at": "2026-08-16T08:10:00+07:00",
+      "actor": "stf_trang",
+      "days_before": 14,
+      "status": "sent",
+      "counts": {
+        "runout": 1,
+        "debt": 2,
+        "sent": 2,
+        "failed": 1,
+        "skipped": 0
+      }
+    }
+  ],
+  "remind_items": [
+    {
+      "id": "rmi_nam_1608",
+      "batch_id": "rmb_1608",
+      "enrollment_id": "enr_nam_toan9",
+      "student_id": "stu_nam",
+      "class_id": "cls_toan9",
+      "guardian_id": "grd_mai",
+      "reason": "debt",
+      "remaining": 0,
+      "runout_date": null,
+      "days_left": 0,
+      "debt": 1,
+      "body": "Lê Thị Mai ơi, Lê Hoàng Nam lớp Toán 9 · T7–CN đã học 1 buổi chưa đóng. Nhờ hoàn tất học phí.",
+      "status": "sent",
+      "fail_reason": null,
+      "zalo_event_id": "zev_fee_nam"
+    },
+    {
+      "id": "rmi_duc_1608",
+      "batch_id": "rmb_1608",
+      "enrollment_id": "enr_duc_toan8",
+      "student_id": "stu_duc",
+      "class_id": "cls_toan8",
+      "guardian_id": "grd_thanh",
+      "reason": "runout",
+      "remaining": 0,
+      "runout_date": null,
+      "days_left": 0,
+      "debt": 0,
+      "body": "Võ Văn Thành ơi, Võ Minh Đức lớp Toán 8 · T4–CN đã hết buổi học. Nhờ nạp thêm để em không bị gián đoạn.",
+      "status": "sent",
+      "fail_reason": null,
+      "zalo_event_id": null
+    },
+    {
+      "id": "rmi_bao_1608",
+      "batch_id": "rmb_1608",
+      "enrollment_id": "enr_bao_ly10",
+      "student_id": "stu_bao",
+      "class_id": "cls_ly10",
+      "guardian_id": "grd_binh",
+      "reason": "debt",
+      "remaining": 0,
+      "runout_date": null,
+      "days_left": 0,
+      "debt": 1,
+      "body": "Trần Văn Bình ơi, Bùi Quốc Bảo lớp Lý 10 · T3–T6 đã học 1 buổi chưa đóng. Nhờ hoàn tất học phí.",
+      "status": "failed",
+      "fail_reason": "OA không gửi được — user_id hết hạn",
+      "zalo_event_id": "zev_fee_bao"
+    }
+  ]
+}
